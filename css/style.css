@@ -1,0 +1,350 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  width: 100px;
+  border: solid 2px gray;
+}
+
+button:hover {
+  background-color: red;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* mani uzimyozgan koqlarim */
+
+
+.h1__doml {
+  transform: translateY(9px);
+}
+
+.hover-text {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+  display: flex;
+  gap: 20px;
+}
+
+.hover-text:hover {
+  color: #ff5722;
+  /* Hover rangini o'zgartirish */
+  transform: translateY(-5px);
+  /* Matnni yuqoriga ko'tarish */
+}
+
+.left {
+  display: flex;
+  gap: 30px;
+}
+
+.paragrpy {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.paragrpy-text:hover {
+  color: #ff5722;
+  /* Hover rangini o'zgartirish */
+  transform: translateY(-5px);
+  /* Matnni yuqoriga ko'tarish */
+}
+
+img {
+    object-fit: cover;
+}
+
+.styled-input {
+  width: 70%;
+  /* Full width */
+  max-width: 200px;
+  /* Limit max width */
+  padding: 10px 15px;
+  /* Padding for inner space */
+  font-size: 16px;
+  /* Text size */
+  border: 2px solid #ccc;
+  /* Light gray border */
+  border-radius: 8px;
+  /* Rounded corners */
+  outline: none;
+  /* Remove default outline */
+  transition: border-color 0.3s, box-shadow 0.3s;
+  /* Smooth focus effects */
+  transform: translatex(30px);
+  background-color: #272f43;
+}
+
+.styled-input:focus {
+  border-color: #007bff;
+  /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  /* Light blue glow */
+}
+
+.styled-input::placeholder {
+  color: #999;
+  /* Placeholder color */
+  font-style: italic;
+  /* Placeholder style */
+}
+
+
+
+/* header kodi */
+
+.hero-content {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content .highlight {
+  color: #7b61ff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.cta-button {
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #7b61ff, #00c6ff);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px;
+  height: 50px;
+}
+
+.cta-button:hover {
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5);
+}
+
+.hero-image img {
+  max-width: 500px;
+  width: 100%;
+  animation: rotate 20s linear infinite;
+}
+
+/* @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* header 2 chi section kodi */
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 100px;
+}
+
+.logos2 {
+  display: flex;
+  justify-content: center;
+  gap: 115px;
+  margin-top: 70px;
+}
+
+.logos3 {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-top: 70px;
+}
+
+.width {
+  width: 70%;
+  height: 513px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #a100ff, #00d4ff);
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.input__cha {
+  width: 70%;
+  /* Full width */
+  max-width: 200px;
+  /* Limit max width */
+  padding: 10px 15px;
+  /* Padding for inner space */
+  font-size: 16px;
+  /* Text size */
+  border: 2px solid #ccc;
+  /* Light gray border */
+  border-radius: 8px;
+  /* Rounded corners */
+  outline: none;
+  /* Remove default outline */
+  transition: border-color 0.3s, box-shadow 0.3s;
+  /* Smooth focus effects */
+  transform: translatex(30px);
+  background-color: #272f43;
+}
+
+.input__cha-input:focus {
+  border-color: #007bff;
+  /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  /* Light blue glow */
+}
+
+.input__cha-input::placeholder {
+  color: #999;
+  /* Placeholder color */
+  font-style: italic;
+  /* Placeholder style */
+}
+
+.small-hover-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #6200ea;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 150px;
+  height: 60px;
+  margin-left: 40px;
+}
+
+.small-hover-button:hover {
+  background-color: #3700b3;
+  transform: scale(1.1);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 1000px;
+  margin-top: 100px;
+}
+
+.footer--hit {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.section--footer {
+  margin-top: 200px;
+}
+
+.section--main {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.section--img {
+  transform: translateY(-40px);
+}
+
+.section--paragrph {
+  font-size: 50px;
+}
+
+.section--all--marketing {
+  font-size: 40px;
+  margin-left: 80px;
+  margin-top: -97px;
+}
+
+.paragriph--optimizedreach {
+  font-size: 30px;
+  transform: translatey(-20px);
+}
+
+.paragrph--itsall {
+  word-spacing: 10px;
+}
+
+.center--img22 {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 150px;
+}
+
+.sister {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hit-header {
+  display: flex;
+  gap: 10px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.header--start {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 150px;
+}
+
+.header--start section{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
